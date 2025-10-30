@@ -14,12 +14,12 @@ All colors MUST be HSL.
     --foreground: 215 25% 27%;
 
     /* Cards and surfaces */
-    --card: 0 0% 100%;
+    --card: 192 100% 94%;
     --card-foreground: 215 25% 27%;
-    --card-header: 210 40% 98%;
+    --card-header: 192 100% 94%;
 
     /* Interactive elements */
-    --popover: 0 0% 100%;
+    --popover: 192 100% 94%;
     --popover-foreground: 215 25% 27%;
 
     /* Primary - Deep ocean blue */
@@ -72,7 +72,7 @@ All colors MUST be HSL.
     --map-region: 210 30% 85%;
     --map-region-hover: 210 50% 75%;
     --map-water: 200 85% 55%;
-    --dashboard-panel: 0 0% 100%;
+    --dashboard-panel: 192 100% 94%;
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
