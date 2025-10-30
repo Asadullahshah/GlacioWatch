@@ -40,7 +40,7 @@ All colors MUST be HSL.
     --accent-foreground: 0 0% 100%;
 
     /* Risk Level Colors */
-    --risk-low: 120 70% 45%;
+    --risk-low: #006102;
     --risk-low-bg: 120 50% 95%;
     --risk-low-foreground: 120 80% 25%;
 
