@@ -29,8 +29,8 @@ export function HomePage({ selectedRegion, onRegionSelect, language }: HomePageP
 
   const getRiskBadgeVariant = (level: string) => {
     switch (level) {
-      case 'low': return 'default';
-      case 'medium': return 'secondary';
+      case 'low': return 'risk-low';
+      case 'medium': return 'risk-medium';
       case 'high': return 'destructive';
       default: return 'outline';
     }
