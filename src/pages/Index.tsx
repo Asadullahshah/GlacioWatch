@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { DashboardHeader } from "@/components/dashboard/DashboardHeader";
+import { VideoBackground } from "@/components/VideoBackground";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Home, TrendingUp, Map, FileText, Waves } from "lucide-react";
 import { RegionData } from "@/types/dashboard";
@@ -32,19 +33,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen relative overflow-hidden">
-      {/* Video Background */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="fixed top-0 left-0 w-full h-full object-cover -z-10"
-      >
-        <source src="/mountain-background.mp4" type="video/mp4" />
-      </video>
-      
-      {/* Overlay for better readability */}
-      <div className="fixed top-0 left-0 w-full h-full bg-background/30 -z-10" />
+      <VideoBackground src="/mountain.mp4" overlayOpacity={0.3} />
       
       <DashboardHeader 
         language={language} 
