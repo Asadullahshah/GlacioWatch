@@ -50,7 +50,9 @@ export function HomePage({ selectedRegion, onRegionSelect, language }: HomePageP
                 key={region.id}
                 variant={selectedRegion?.id === region.id ? "default" : "outline"}
                 onClick={() => onRegionSelect(region)}
-                className="h-auto p-4 flex flex-col items-center gap-2"
+                className={`h-auto p-4 flex flex-col items-center gap-2 ${
+                  selectedRegion?.id === region.id ? 'bg-primary text-primary-foreground hover:bg-primary/90' : ''
+                }`}
               >
                 <span className="font-medium text-sm">
                   {language === 'en' ? region.name : region.nameUr}
