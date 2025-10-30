@@ -31,7 +31,21 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen relative overflow-hidden">
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="fixed top-0 left-0 w-full h-full object-cover -z-10"
+      >
+        <source src="/mountain-background.mp4" type="video/mp4" />
+      </video>
+      
+      {/* Overlay for better readability */}
+      <div className="fixed top-0 left-0 w-full h-full bg-background/30 -z-10" />
+      
       <DashboardHeader 
         language={language} 
         onLanguageChange={setLanguage}
