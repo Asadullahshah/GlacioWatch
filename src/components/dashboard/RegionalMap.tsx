@@ -231,6 +231,7 @@ export function RegionalMap({ onRegionSelect, selectedRegion, language }: Region
               variant={viewMode === 'standard' ? 'default' : 'outline'}
               size="sm"
               onClick={() => setViewMode('standard')}
+              className={viewMode === 'standard' ? 'bg-primary text-primary-foreground hover:bg-primary/90' : ''}
             >
               <MapIcon className="h-4 w-4 mr-1" />
               {t[language].standardView}
@@ -239,6 +240,7 @@ export function RegionalMap({ onRegionSelect, selectedRegion, language }: Region
               variant={viewMode === 'satellite' ? 'default' : 'outline'}
               size="sm"
               onClick={() => setViewMode('satellite')}
+              className={viewMode === 'satellite' ? 'bg-primary text-primary-foreground hover:bg-primary/90' : ''}
             >
               <Satellite className="h-4 w-4 mr-1" />
               {t[language].satelliteView}

@@ -75,6 +75,7 @@ export function TrendVisualization({ region, language }: TrendVisualizationProps
               variant={isHistoryMode ? "default" : "outline"}
               size="sm"
               onClick={() => setIsHistoryMode(!isHistoryMode)}
+              className={isHistoryMode ? 'bg-primary text-primary-foreground hover:bg-primary/90' : ''}
             >
               {isHistoryMode ? <Pause className="h-4 w-4 mr-2" /> : <Play className="h-4 w-4 mr-2" />}
               {t[language].historyMode}
@@ -95,10 +96,9 @@ export function TrendVisualization({ region, language }: TrendVisualizationProps
                 <Badge
                   key={indicator.id}
                   variant={selectedIndicators.includes(indicator.id) ? "default" : "outline"}
-                  className="cursor-pointer"
+                  className={`cursor-pointer ${selectedIndicators.includes(indicator.id) ? 'bg-primary text-primary-foreground hover:bg-primary/90' : ''}`}
                   onClick={() => toggleIndicator(indicator.id)}
-                  style={{ 
-                    backgroundColor: selectedIndicators.includes(indicator.id) ? indicator.color : undefined,
+                  style={{
                     borderColor: indicator.color
                   }}
                 >
